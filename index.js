@@ -50,3 +50,4 @@ process.on('uncaughtException', error => {
 });
 
 client.login(config.token).catch(() => { client.logger.log('Invaid TOKEN!', "warn") });
+
