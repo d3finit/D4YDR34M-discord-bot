@@ -26,6 +26,9 @@ module.exports = {
 						'`'+
 						"\nWelcome channel id (welchannid): `"+
 						client.settings.get(message.guildId, "welcomechannel")+
+						'`' + 
+						"\Public (public): `"+
+						client.settings.get(message.guildId, "public")+
 						'`'
 					)
                 	.setColor(config.color)
@@ -98,6 +101,23 @@ module.exports = {
             	const embed = new discord.MessageEmbed()
         	        .setDescription(`Welcome channel id changed to : \`${args[1]}\``)
     	            .setColor(config.color)
+	            message.channel.send({
+                	embeds: [embed]
+            	});
+			} else if (args[0] == "public") {
+				var embed = null;
+				if (args[1] == "true"){
+					client.settings.set(message.guildId, true, "public");
+					embed = new discord.MessageEmbed()
+        	        	.setDescription(`Public state changed to : \`true\``)
+    	            	.setColor(config.color)
+				} else {
+					client.settings.set(message.guildId, false, "public");
+					embed = new discord.MessageEmbed()
+        	        	.setDescription(`Public state changed to : \`false\``)
+    	            	.setColor(config.color)
+				}
+				
 	            message.channel.send({
                 	embeds: [embed]
             	});

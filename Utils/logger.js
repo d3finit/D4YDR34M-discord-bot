@@ -7,7 +7,7 @@ module.exports = class Logger {
 		switch (type) {
 		// Check the message type and then print him in the console
 		case "info": {
-			return console.log(`${chalk.hex('#1FAC64')(` ❯ INFO        ${chalk.hex('#1FAC64')(`[${date}]`)} `)} ${chalk.hex('#59a5e9')(content)}`);
+			return console.log(`${chalk.hex('#1FAC64')(` ❯ info:        ${chalk.hex('#1FAC64')(`[${date}]`)} `)} ${chalk.hex('#59a5e9')(content)}`);
 		}
 		case "warn": {
 			return console.log(`${chalk.hex('#1FAC64')(` ❯ WARNING     ${chalk.hex('#1FAC64')(`[${date}]`)} `)} ${chalk.hex('#ffd966')(content)}`);

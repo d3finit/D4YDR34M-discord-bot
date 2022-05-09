@@ -1,0 +1,1 @@
+{"version":2,"languages":{"nodejs-npm":{"specfileHash":"71830768b4c6eaf8aa80d1da23c9d2cb","lockfileHash":"d465451622418e5dc5917106290d8351","guessedImports":["moment-timezone","ytdl-core","enmap","ms","express","chalk","discord.js","@discordjs/voice","moment-duration-format","body-parser","moment","petitio"],"guessedImportsHash":"b5132c277ad87fe07549dc4648647cf2"}}}

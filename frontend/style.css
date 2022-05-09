@@ -1,0 +1,9 @@
+.title-img {
+	background-image: url("images/rsz_3milad-fakurian-jrmz6hvqeu4-unsplash.jpg");
+	width: 100% !important;
+	height: 512px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white;
+  	padding: 128px 0;
+}

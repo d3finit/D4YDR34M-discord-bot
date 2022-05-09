@@ -1,7 +1,7 @@
 const discord = require("discord.js");
 var config = require("./config.json");
 const Enmap = require("enmap");
-require('./server.js');
+var server = require('./server.js');
 
 config.token = process.env['TOKEN']
 
@@ -18,7 +18,7 @@ const client = new discord.Client({
             sweepInterval: 300,
             sweepFilter: discord.Sweepers.filterByLifetime({
                 lifetime: 60,
-                getComparisonTimestamp: m => m.editedTimestamp ?? m.createdTimestamp,
+                getComparisonTimestamp: m => m.editedTimestamp ?? m.createdTimestamp
             })
         }
     }
@@ -51,3 +51,6 @@ process.on('uncaughtException', error => {
 
 client.login(config.token).catch(() => { client.logger.log('Invaid TOKEN!', "warn") });
 
+
+
+server.run(client);

@@ -25,7 +25,8 @@ module.exports = {
                 Admin: "",
                 "Bot Owner": "👑 ",
 				Mod: ":shield: ",
-				Fun: ":smile: "	
+				Fun: ":smile: ",
+				Community: ""
             };
     
             const embed = new discord.MessageEmbed()
