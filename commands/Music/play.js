@@ -1,8 +1,10 @@
+var ffmpeg_binaries = require('ffmpeg-binaries');
+
 module.exports = {
 	name: 'play',
 	aliases: [],
-	description: "Plays a Youtube video",
-	category: "Mod",
+	description: "Plays a Youtube video's audio in the connected voice channel.",
+	category: "Music",
 	cooldown: 5,
 	run: async (client, message, args) => {
 

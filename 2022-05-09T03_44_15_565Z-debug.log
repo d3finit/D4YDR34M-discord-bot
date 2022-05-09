@@ -1,0 +1,903 @@
+0 verbose cli [
+0 verbose cli   '/nix/store/ra8r42571xvv1m85wanh1ll9mxmp0mwl-nodejs-16.13.2/bin/node',
+0 verbose cli   '/nix/store/ra8r42571xvv1m85wanh1ll9mxmp0mwl-nodejs-16.13.2/bin/npm',
+0 verbose cli   'i',
+0 verbose cli   'ffmpeg-binaries'
+0 verbose cli ]
+1 info using npm@8.1.2
+2 info using node@v16.13.2
+3 timing npm:load:whichnode Completed in 1ms
+4 timing config:load:defaults Completed in 2ms
+5 timing config:load:file:/nix/store/ra8r42571xvv1m85wanh1ll9mxmp0mwl-nodejs-16.13.2/lib/node_modules/npm/npmrc Completed in 8ms
+6 timing config:load:builtin Completed in 8ms
+7 timing config:load:cli Completed in 3ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:file:/home/runner/D4YDR34M-Discord-Bot/.npmrc Completed in 1ms
+10 timing config:load:project Completed in 4ms
+11 timing config:load:file:/home/runner/.npmrc Completed in 0ms
+12 timing config:load:user Completed in 1ms
+13 timing config:load:file:/nix/store/ra8r42571xvv1m85wanh1ll9mxmp0mwl-nodejs-16.13.2/etc/npmrc Completed in 0ms
+14 timing config:load:global Completed in 0ms
+15 timing config:load:validate Completed in 0ms
+16 timing config:load:credentials Completed in 2ms
+17 timing config:load:setEnvs Completed in 1ms
+18 timing config:load Completed in 22ms
+19 timing npm:load:configload Completed in 22ms
+20 timing npm:load:setTitle Completed in 0ms
+21 timing npm:load:setupLog Completed in 1ms
+22 timing config:load:flatten Completed in 4ms
+23 timing npm:load:cleanupLog Completed in 3ms
+24 timing npm:load:configScope Completed in 0ms
+25 timing npm:load:projectScope Completed in 1ms
+26 timing npm:load Completed in 34ms
+27 timing arborist:ctor Completed in 1ms
+28 timing idealTree:init Completed in 888ms
+29 timing idealTree:userRequests Completed in 11ms
+30 silly idealTree buildDeps
+31 silly fetch manifest ffmpeg-binaries@*
+32 timing arborist:ctor Completed in 0ms
+33 http fetch GET 200 https://registry.npmjs.org/ffmpeg-binaries 530ms (cache hit)
+34 silly placeDep ROOT ffmpeg-binaries@4.0.0 OK for: discord-js-v13-template@2.0.0 want: *
+35 silly fetch manifest decompress@^4.2.0
+36 silly fetch manifest decompress-tarxz@^2.1.1
+37 silly fetch manifest decompress-unzip@^4.0.1
+38 http fetch GET 200 https://registry.npmjs.org/decompress 78ms (cache hit)
+39 http fetch GET 200 https://registry.npmjs.org/decompress-unzip 78ms (cache hit)
+40 http fetch GET 200 https://registry.npmjs.org/decompress-tarxz 82ms (cache hit)
+41 timing idealTree:#root Completed in 692ms
+42 silly placeDep ROOT decompress@4.2.1 OK for: ffmpeg-binaries@4.0.0 want: ^4.2.0
+43 silly placeDep ROOT decompress-tarxz@2.1.1 OK for: ffmpeg-binaries@4.0.0 want: ^2.1.1
+44 silly placeDep ROOT decompress-unzip@4.0.1 OK for: ffmpeg-binaries@4.0.0 want: ^4.0.1
+45 silly fetch manifest decompress-tar@^4.0.0
+46 silly fetch manifest decompress-tarbz2@^4.0.0
+47 silly fetch manifest decompress-targz@^4.0.0
+48 silly fetch manifest graceful-fs@^4.1.10
+49 silly fetch manifest make-dir@^1.0.0
+50 silly fetch manifest pify@^2.3.0
+51 silly fetch manifest strip-dirs@^2.0.0
+52 silly fetch manifest decompress-tar@^4.1.0
+53 silly fetch manifest file-type@^3.8.0
+54 silly fetch manifest is-stream@^1.1.0
+55 silly fetch manifest lzma-native@^3.0.1
+56 silly fetch manifest get-stream@^2.2.0
+57 silly fetch manifest yauzl@^2.4.2
+58 http fetch GET 200 https://registry.npmjs.org/decompress-tar 183ms (cache hit)
+59 http fetch GET 200 https://registry.npmjs.org/decompress-tarbz2 184ms (cache hit)
+60 http fetch GET 200 https://registry.npmjs.org/strip-dirs 182ms (cache hit)
+61 http fetch GET 200 https://registry.npmjs.org/pify 184ms (cache hit)
+62 http fetch GET 200 https://registry.npmjs.org/decompress-targz 190ms (cache hit)
+63 http fetch GET 200 https://registry.npmjs.org/yauzl 185ms (cache hit)
+64 http fetch GET 200 https://registry.npmjs.org/make-dir 192ms (cache hit)
+65 http fetch GET 200 https://registry.npmjs.org/get-stream 190ms (cache hit)
+66 http fetch GET 200 https://registry.npmjs.org/is-stream 193ms (cache hit)
+67 http fetch GET 200 https://registry.npmjs.org/graceful-fs 204ms (cache hit)
+68 http fetch GET 200 https://registry.npmjs.org/file-type 204ms (cache hit)
+69 http fetch GET 200 https://registry.npmjs.org/lzma-native 272ms (cache hit)
+70 timing idealTree:node_modules/ffmpeg-binaries Completed in 295ms
+71 silly placeDep ROOT decompress-tar@4.1.1 OK for: decompress@4.2.1 want: ^4.0.0
+72 silly placeDep ROOT decompress-tarbz2@4.1.1 OK for: decompress@4.2.1 want: ^4.0.0
+73 silly placeDep ROOT decompress-targz@4.1.1 OK for: decompress@4.2.1 want: ^4.0.0
+74 silly placeDep ROOT graceful-fs@4.2.10 OK for: decompress@4.2.1 want: ^4.1.10
+75 silly placeDep ROOT make-dir@1.3.0 OK for: decompress@4.2.1 want: ^1.0.0
+76 silly placeDep ROOT pify@2.3.0 OK for: decompress@4.2.1 want: ^2.3.0
+77 silly placeDep ROOT strip-dirs@2.1.0 OK for: decompress@4.2.1 want: ^2.0.0
+78 silly fetch manifest file-type@^5.2.0
+79 silly fetch manifest tar-stream@^1.5.2
+80 silly fetch manifest file-type@^6.1.0
+81 silly fetch manifest seek-bzip@^1.0.5
+82 silly fetch manifest unbzip2-stream@^1.0.9
+83 silly fetch manifest pify@^3.0.0
+84 silly fetch manifest is-natural-number@^4.0.1
+85 http fetch GET 200 https://registry.npmjs.org/seek-bzip 88ms (cache hit)
+86 http fetch GET 200 https://registry.npmjs.org/unbzip2-stream 88ms (cache hit)
+87 http fetch GET 200 https://registry.npmjs.org/is-natural-number 88ms (cache hit)
+88 http fetch GET 200 https://registry.npmjs.org/tar-stream 166ms (cache hit)
+89 timing idealTree:node_modules/decompress Completed in 190ms
+90 silly placeDep ROOT file-type@5.2.0 OK for: decompress-tar@4.1.1 want: ^5.2.0
+91 silly placeDep ROOT is-stream@1.1.0 OK for: decompress-tar@4.1.1 want: ^1.1.0
+92 silly placeDep node_modules/decompress-tar tar-stream@1.6.2 OK for: decompress-tar@4.1.1 want: ^1.5.2
+93 silly fetch manifest bl@^1.0.0
+94 silly fetch manifest buffer-alloc@^1.2.0
+95 silly fetch manifest to-buffer@^1.1.1
+96 silly fetch manifest xtend@^4.0.0
+97 http fetch GET 200 https://registry.npmjs.org/bl 192ms (cache hit)
+98 http fetch GET 200 https://registry.npmjs.org/buffer-alloc 192ms (cache hit)
+99 http fetch GET 200 https://registry.npmjs.org/xtend 190ms (cache hit)
+100 http fetch GET 200 https://registry.npmjs.org/to-buffer 192ms (cache hit)
+101 timing idealTree:node_modules/decompress-tar Completed in 207ms
+102 silly placeDep node_modules/decompress-tarbz2 file-type@6.2.0 OK for: decompress-tarbz2@4.1.1 want: ^6.1.0
+103 silly placeDep ROOT seek-bzip@1.0.6 OK for: decompress-tarbz2@4.1.1 want: ^1.0.5
+104 silly placeDep ROOT unbzip2-stream@1.4.3 OK for: decompress-tarbz2@4.1.1 want: ^1.0.9
+105 silly fetch manifest commander@^2.8.1
+106 http fetch GET 200 https://registry.npmjs.org/commander 84ms (cache hit)
+107 timing idealTree:node_modules/decompress-tarbz2 Completed in 92ms
+108 timing idealTree:node_modules/decompress-targz Completed in 1ms
+109 silly placeDep node_modules/decompress-tarxz file-type@3.9.0 OK for: decompress-tarxz@2.1.1 want: ^3.8.0
+110 silly placeDep node_modules/decompress-tarxz lzma-native@3.0.8 OK for: decompress-tarxz@2.1.1 want: ^3.0.1
+111 silly fetch manifest nan@^2.10.0
+112 http fetch GET 200 https://registry.npmjs.org/nan 5ms (cache hit)
+113 timing idealTree:node_modules/decompress-tarxz Completed in 15ms
+114 silly placeDep node_modules/decompress-unzip file-type@3.9.0 OK for: decompress-unzip@4.0.1 want: ^3.8.0
+115 silly placeDep ROOT get-stream@2.3.1 OK for: decompress-unzip@4.0.1 want: ^2.2.0
+116 silly placeDep ROOT yauzl@2.10.0 OK for: decompress-unzip@4.0.1 want: ^2.4.2
+117 silly fetch manifest pinkie-promise@^2.0.0
+118 silly fetch manifest fd-slicer@~1.1.0
+119 silly fetch manifest buffer-crc32@~0.2.3
+120 http fetch GET 200 https://registry.npmjs.org/pinkie-promise 17ms (cache hit)
+121 http fetch GET 200 https://registry.npmjs.org/fd-slicer 17ms (cache hit)
+122 http fetch GET 200 https://registry.npmjs.org/buffer-crc32 96ms (cache hit)
+123 timing idealTree:node_modules/decompress-unzip Completed in 178ms
+124 timing idealTree:node_modules/file-type Completed in 0ms
+125 silly placeDep ROOT pinkie-promise@2.0.1 OK for: get-stream@2.3.1 want: ^2.0.0
+126 silly fetch manifest pinkie@^2.0.0
+127 http fetch GET 200 https://registry.npmjs.org/pinkie 7ms (cache hit)
+128 timing idealTree:node_modules/get-stream Completed in 14ms
+129 timing idealTree:node_modules/graceful-fs Completed in 0ms
+130 timing idealTree:node_modules/is-stream Completed in 0ms
+131 silly placeDep node_modules/make-dir pify@3.0.0 OK for: make-dir@1.3.0 want: ^3.0.0
+132 timing idealTree:node_modules/make-dir Completed in 2ms
+133 timing idealTree:node_modules/pify Completed in 0ms
+134 silly placeDep ROOT pinkie@2.0.4 OK for: pinkie-promise@2.0.1 want: ^2.0.0
+135 timing idealTree:node_modules/pinkie-promise Completed in 1ms
+136 timing idealTree:node_modules/pinkie Completed in 0ms
+137 silly placeDep ROOT commander@2.20.3 OK for: seek-bzip@1.0.6 want: ^2.8.1
+138 timing idealTree:node_modules/seek-bzip Completed in 2ms
+139 timing idealTree:node_modules/commander Completed in 0ms
+140 silly placeDep ROOT is-natural-number@4.0.1 OK for: strip-dirs@2.1.0 want: ^4.0.1
+141 timing idealTree:node_modules/strip-dirs Completed in 1ms
+142 timing idealTree:node_modules/is-natural-number Completed in 0ms
+143 timing idealTree:node_modules/unbzip2-stream Completed in 0ms
+144 silly placeDep ROOT buffer-crc32@0.2.13 OK for: yauzl@2.10.0 want: ~0.2.3
+145 silly placeDep ROOT fd-slicer@1.1.0 OK for: yauzl@2.10.0 want: ~1.1.0
+146 silly fetch manifest pend@~1.2.0
+147 http fetch GET 200 https://registry.npmjs.org/pend 88ms (cache hit)
+148 timing idealTree:node_modules/yauzl Completed in 193ms
+149 timing idealTree:node_modules/buffer-crc32 Completed in 0ms
+150 silly placeDep ROOT pend@1.2.0 OK for: fd-slicer@1.1.0 want: ~1.2.0
+151 timing idealTree:node_modules/fd-slicer Completed in 2ms
+152 timing idealTree:node_modules/pend Completed in 0ms
+153 silly placeDep node_modules/decompress-tar bl@1.2.3 OK for: tar-stream@1.6.2 want: ^1.0.0
+154 silly placeDep ROOT buffer-alloc@1.2.0 OK for: tar-stream@1.6.2 want: ^1.2.0
+155 silly placeDep ROOT to-buffer@1.1.1 OK for: tar-stream@1.6.2 want: ^1.1.1
+156 silly placeDep ROOT xtend@4.0.2 OK for: tar-stream@1.6.2 want: ^4.0.0
+157 silly fetch manifest buffer-alloc-unsafe@^1.1.0
+158 silly fetch manifest buffer-fill@^1.0.0
+159 http fetch GET 200 https://registry.npmjs.org/buffer-alloc-unsafe 80ms (cache hit)
+160 http fetch GET 200 https://registry.npmjs.org/buffer-fill 80ms (cache hit)
+161 timing idealTree:node_modules/decompress-tar/node_modules/tar-stream Completed in 90ms
+162 silly placeDep ROOT buffer-alloc-unsafe@1.1.0 OK for: buffer-alloc@1.2.0 want: ^1.1.0
+163 silly placeDep ROOT buffer-fill@1.0.0 OK for: buffer-alloc@1.2.0 want: ^1.0.0
+164 timing idealTree:node_modules/buffer-alloc Completed in 3ms
+165 timing idealTree:node_modules/buffer-alloc-unsafe Completed in 0ms
+166 timing idealTree:node_modules/buffer-fill Completed in 0ms
+167 timing idealTree:node_modules/to-buffer Completed in 0ms
+168 timing idealTree:node_modules/xtend Completed in 0ms
+169 timing idealTree:node_modules/decompress-tar/node_modules/bl Completed in 0ms
+170 timing idealTree:node_modules/decompress-tarbz2/node_modules/file-type Completed in 0ms
+171 timing idealTree:node_modules/decompress-tarxz/node_modules/file-type Completed in 0ms
+172 silly placeDep ROOT nan@2.15.0 OK for: lzma-native@3.0.8 want: ^2.10.0
+173 timing idealTree:node_modules/decompress-tarxz/node_modules/lzma-native Completed in 1ms
+174 timing idealTree:node_modules/nan Completed in 0ms
+175 timing idealTree:node_modules/decompress-unzip/node_modules/file-type Completed in 0ms
+176 timing idealTree:node_modules/make-dir/node_modules/pify Completed in 0ms
+177 timing idealTree:buildDeps Completed in 1982ms
+178 timing idealTree:fixDepFlags Completed in 9ms
+179 timing idealTree Completed in 2973ms
+180 timing reify:loadTrees Completed in 2974ms
+181 timing reify:diffTrees Completed in 11ms
+182 silly reify moves {}
+183 timing reify:retireShallow Completed in 0ms
+184 timing reify:createSparse Completed in 186ms
+185 timing reifyNode:node_modules/decompress-tarxz/node_modules/lzma-native Completed in 4645ms
+186 timing arborist:ctor Completed in 1ms
+187 timing reify:diffTrees Completed in 8ms
+188 timing reify:loadBundles Completed in 5218ms
+189 silly audit bulk request {
+189 silly audit   '@derhuerst/http-basic': [ '8.2.2' ],
+189 silly audit   'concat-stream': [ '1.6.2', '1.0.1' ],
+189 silly audit   '@discordjs/collection': [ '0.1.6', '0.4.0' ],
+189 silly audit   '@discordjs/form-data': [ '3.0.1' ],
+189 silly audit   '@discordjs/voice': [ '0.9.0' ],
+189 silly audit   '@sapphire/async-queue': [ '1.3.1' ],
+189 silly audit   '@sindresorhus/is': [ '4.6.0' ],
+189 silly audit   '@types/node': [ '17.0.25', '10.17.60' ],
+189 silly audit   '@types/node-fetch': [ '2.6.1' ],
+189 silly audit   'form-data': [ '3.0.1', '4.0.0', '2.1.4' ],
+189 silly audit   '@types/ws': [ '8.5.3' ],
+189 silly audit   'abort-controller': [ '3.0.0' ],
+189 silly audit   accepts: [ '1.3.8' ],
+189 silly audit   'agent-base': [ '6.0.2' ],
+189 silly audit   'ansi-regex': [ '5.0.1', '2.1.1' ],
+189 silly audit   'ansi-styles': [ '4.3.0' ],
+189 silly audit   aproba: [ '1.2.0' ],
+189 silly audit   'are-we-there-yet': [ '1.1.7', '1.1.4' ],
+189 silly audit   'array-flatten': [ '1.1.1' ],
+189 silly audit   asynckit: [ '0.4.0' ],
+189 silly audit   avconv_id3: [ '2.0.0' ],
+189 silly audit   'base64-js': [ '1.5.1', '0.0.2' ],
+189 silly audit   'better-sqlite3': [ '7.5.1' ],
+189 silly audit   bindings: [ '1.5.0' ],
+189 silly audit   bl: [ '4.1.0', '1.2.3' ],
+189 silly audit   'readable-stream': [ '3.6.0', '2.3.7', '2.3.6' ],
+189 silly audit   'body-parser': [ '1.20.0', '1.19.2' ],
+189 silly audit   debug: [ '2.6.9', '4.3.4' ],
+189 silly audit   depd: [ '2.0.0', '1.1.2' ],
+189 silly audit   destroy: [ '1.2.0', '1.0.4' ],
+189 silly audit   'http-errors': [ '2.0.0', '1.8.1' ],
+189 silly audit   ms: [ '2.0.0', '2.1.2', '2.1.3' ],
+189 silly audit   'on-finished': [ '2.4.1', '2.3.0' ],
+189 silly audit   qs: [ '6.10.3', '6.9.7', '6.4.0' ],
+189 silly audit   statuses: [ '2.0.1', '1.5.0' ],
+189 silly audit   bops: [ '0.0.6' ],
+189 silly audit   buffer: [ '5.7.1' ],
+189 silly audit   'buffer-from': [ '1.1.2' ],
+189 silly audit   bytes: [ '3.1.2' ],
+189 silly audit   'call-bind': [ '1.0.2' ],
+189 silly audit   caseless: [ '0.12.0' ],
+189 silly audit   chalk: [ '4.1.2' ],
+189 silly audit   'has-flag': [ '4.0.0' ],
+189 silly audit   'supports-color': [ '7.2.0' ],
+189 silly audit   child_process: [ '1.0.2' ],
+189 silly audit   chownr: [ '1.1.4' ],
+189 silly audit   'code-point-at': [ '1.1.0' ],
+189 silly audit   'color-convert': [ '2.0.1' ],
+189 silly audit   'color-name': [ '1.1.4' ],
+189 silly audit   'combined-stream': [ '1.0.8', '1.0.6' ],
+189 silly audit   'console-control-strings': [ '1.1.0' ],
+189 silly audit   'content-disposition': [ '0.5.4' ],
+189 silly audit   'content-type': [ '1.0.4' ],
+189 silly audit   cookie: [ '0.4.2' ],
+189 silly audit   'cookie-signature': [ '1.0.6' ],
+189 silly audit   'core-util-is': [ '1.0.3', '1.0.2' ],
+189 silly audit   'deep-extend': [ '0.6.0', '0.5.1' ],
+189 silly audit   'delayed-stream': [ '1.0.0' ],
+189 silly audit   delegates: [ '1.0.0' ],
+189 silly audit   'detect-libc': [ '2.0.1', '1.0.3' ],
+189 silly audit   'discord-api-types': [ '0.29.0', '0.26.1' ],
+189 silly audit   'discord-reply': [ '0.1.2' ],
+189 silly audit   'discord.js': [ '12.5.3', '13.6.0' ],
+189 silly audit   ws: [ '7.5.7', '8.5.0' ],
+189 silly audit   '@discordjs/builders': [ '0.11.0' ],
+189 silly audit   duplexer: [ '0.0.4' ],
+189 silly audit   'ee-first': [ '1.1.1' ],
+189 silly audit   'emoji-regex': [ '8.0.0' ],
+189 silly audit   encodeurl: [ '1.0.2' ],
+189 silly audit   'end-of-stream': [ '1.4.4' ],
+189 silly audit   enmap: [ '5.9.0' ],
+189 silly audit   'env-paths': [ '2.2.1' ],
+189 silly audit   'escape-html': [ '1.0.3' ],
+189 silly audit   etag: [ '1.8.1' ],
+189 silly audit   'event-target-shim': [ '5.0.1' ],
+189 silly audit   'expand-template': [ '2.0.3' ],
+189 silly audit   express: [ '4.17.3' ],
+189 silly audit   'raw-body': [ '2.4.3', '2.5.1' ],
+189 silly audit   ffmpeg: [ '0.0.4' ],
+189 silly audit   'ffmpeg-static': [ '4.4.1' ],
+189 silly audit   'file-uri-to-path': [ '1.0.0' ],
+189 silly audit   finalhandler: [ '1.1.2' ],
+189 silly audit   forwarded: [ '0.2.0' ],
+189 silly audit   fresh: [ '0.5.2' ],
+189 silly audit   fs: [ '0.0.2' ],
+189 silly audit   'fs-constants': [ '1.0.0' ],
+189 silly audit   'function-bind': [ '1.1.1' ],
+189 silly audit   gauge: [ '2.7.4' ],
+189 silly audit   'is-fullwidth-code-point': [ '1.0.0', '3.0.0' ],
+189 silly audit   'string-width': [ '1.0.2', '4.2.3' ],
+189 silly audit   'strip-ansi': [ '3.0.1', '6.0.1' ],
+189 silly audit   'get-intrinsic': [ '1.1.1' ],
+189 silly audit   'github-from-package': [ '0.0.0' ],
+189 silly audit   has: [ '1.0.3' ],
+189 silly audit   'has-symbols': [ '1.0.3' ],
+189 silly audit   'has-unicode': [ '2.0.1' ],
+189 silly audit   'http-response-object': [ '3.0.2' ],
+189 silly audit   'https-proxy-agent': [ '5.0.1' ],
+189 silly audit   'iconv-lite': [ '0.4.24' ],
+189 silly audit   ieee754: [ '1.2.1' ],
+189 silly audit   inherits: [ '2.0.4', '2.0.3' ],
+189 silly audit   'ipaddr.js': [ '1.9.1' ],
+189 silly audit   isarray: [ '1.0.0' ],
+189 silly audit   libsodium: [ '0.7.10' ],
+189 silly audit   'libsodium-wrappers': [ '0.7.10' ],
+189 silly audit   lodash: [ '4.17.21' ],
+189 silly audit   'lru-cache': [ '6.0.0' ],
+189 silly audit   'lzma-native': [ '8.0.6', '3.0.8' ],
+189 silly audit   m3u8stream: [ '0.8.6' ],
+189 silly audit   'media-typer': [ '0.3.0' ],
+189 silly audit   'merge-descriptors': [ '1.0.1' ],
+189 silly audit   methods: [ '1.1.2' ],
+189 silly audit   mime: [ '1.6.0' ],
+189 silly audit   'mime-db': [ '1.52.0', '1.33.0' ],
+189 silly audit   'mime-types': [ '2.1.35', '2.1.18' ],
+189 silly audit   miniget: [ '4.2.2' ],
+189 silly audit   minimist: [ '1.2.6', '0.0.8', '1.2.0' ],
+189 silly audit   'mkdirp-classic': [ '0.5.3' ],
+189 silly audit   moment: [ '2.29.3' ],
+189 silly audit   'moment-duration-format': [ '2.3.2' ],
+189 silly audit   'moment-timezone': [ '0.5.34' ],
+189 silly audit   'napi-build-utils': [ '1.0.2' ],
+189 silly audit   negotiator: [ '0.6.3' ],
+189 silly audit   node: [ '16.14.2' ],
+189 silly audit   'node-abi': [ '3.15.0' ],
+189 silly audit   semver: [ '7.3.7', '5.5.0' ],
+189 silly audit   'node-addon-api': [ '3.2.1', '4.2.0' ],
+189 silly audit   'node-bin-setup': [ '1.1.0' ],
+189 silly audit   'node-fetch': [ '2.6.7' ],
+189 silly audit   tr46: [ '0.0.3' ],
+189 silly audit   'webidl-conversions': [ '3.0.1' ],
+189 silly audit   'whatwg-url': [ '5.0.0' ],
+189 silly audit   'node-gyp-build': [ '4.4.0', '4.3.0' ],
+189 silly audit   'node-liblzma': [ '1.1.9' ],
+189 silly audit   npmlog: [ '4.1.2' ],
+189 silly audit   'number-is-nan': [ '1.0.1' ],
+189 silly audit   'object-assign': [ '4.1.1' ],
+189 silly audit   'object-inspect': [ '1.12.0' ],
+189 silly audit   'on-change': [ '2.2.3' ],
+189 silly audit   once: [ '1.4.0' ],
+189 silly audit   opusscript: [ '0.0.8' ],
+189 silly audit   'parse-cache-control': [ '1.0.1' ],
+189 silly audit   parseurl: [ '1.3.3' ],
+189 silly audit   'path-to-regexp': [ '0.1.7' ],
+189 silly audit   petitio: [ '1.4.0' ],
+189 silly audit   'prebuild-install': [ '7.0.1' ],
+189 silly audit   'prism-media': [ '1.3.2' ],
+189 silly audit   'process-nextick-args': [ '2.0.1', '2.0.0' ],
+189 silly audit   progress: [ '2.0.3' ],
+189 silly audit   'proxy-addr': [ '2.0.7' ],
+189 silly audit   pump: [ '3.0.0' ],
+189 silly audit   randombytes: [ '2.1.0' ],
+189 silly audit   'range-parser': [ '1.2.1' ],
+189 silly audit   rc: [ '1.2.8', '1.2.7' ],
+189 silly audit   ini: [ '1.3.8', '1.3.5' ],
+189 silly audit   'safe-buffer': [ '5.1.2', '5.2.1' ],
+189 silly audit   'safer-buffer': [ '2.1.2' ],
+189 silly audit   sax: [ '1.2.4' ],
+189 silly audit   send: [ '0.17.2' ],
+189 silly audit   'serialize-javascript': [ '6.0.0' ],
+189 silly audit   'serve-static': [ '1.14.2' ],
+189 silly audit   'set-blocking': [ '2.0.0' ],
+189 silly audit   setimmediate: [ '1.0.5' ],
+189 silly audit   setprototypeof: [ '1.2.0' ],
+189 silly audit   'side-channel': [ '1.0.4' ],
+189 silly audit   'signal-exit': [ '3.0.7', '3.0.2' ],
+189 silly audit   'simple-concat': [ '1.0.1' ],
+189 silly audit   'simple-get': [ '4.0.1' ],
+189 silly audit   'decompress-response': [ '6.0.0' ],
+189 silly audit   'mimic-response': [ '3.1.0' ],
+189 silly audit   split: [ '0.2.10' ],
+189 silly audit   'stream-combiner': [ '0.0.2' ],
+189 silly audit   'stream-filter': [ '1.0.0' ],
+189 silly audit   string_decoder: [ '1.1.1' ],
+189 silly audit   'strip-json-comments': [ '2.0.1' ],
+189 silly audit   'tar-fs': [ '2.1.1' ],
+189 silly audit   'tar-stream': [ '2.2.0', '1.6.2' ],
+189 silly audit   through: [ '2.3.8' ],
+189 silly audit   'tiny-typed-emitter': [ '2.1.0' ],
+189 silly audit   'to-utf8': [ '0.0.1' ],
+189 silly audit   toidentifier: [ '1.0.1' ],
+189 silly audit   'ts-mixer': [ '6.0.1' ],
+189 silly audit   tslib: [ '2.3.1' ],
+189 silly audit   'tunnel-agent': [ '0.6.0' ],
+189 silly audit   tweetnacl: [ '1.0.3', '0.14.5' ],
+189 silly audit   'type-is': [ '1.6.18' ],
+189 silly audit   typedarray: [ '0.0.6' ],
+189 silly audit   unpipe: [ '1.0.0' ],
+189 silly audit   'util-deprecate': [ '1.0.2' ],
+189 silly audit   'utils-merge': [ '1.0.1' ],
+189 silly audit   vary: [ '1.1.2' ],
+189 silly audit   when: [ '3.7.8' ],
+189 silly audit   'wide-align': [ '1.1.5', '1.1.2' ],
+189 silly audit   wrappy: [ '1.0.2' ],
+189 silly audit   yallist: [ '4.0.0' ],
+189 silly audit   'ytdl-core': [ '4.11.0' ],
+189 silly audit   zod: [ '3.14.4' ],
+189 silly audit   'ffmpeg-binaries': [ '4.0.0' ],
+189 silly audit   decompress: [ '4.2.1' ],
+189 silly audit   'decompress-tarxz': [ '2.1.1' ],
+189 silly audit   'decompress-unzip': [ '4.0.1' ],
+189 silly audit   'decompress-tar': [ '4.1.1' ],
+189 silly audit   'decompress-tarbz2': [ '4.1.1' ],
+189 silly audit   'decompress-targz': [ '4.1.1' ],
+189 silly audit   'graceful-fs': [ '4.2.10', '4.1.11' ],
+189 silly audit   'make-dir': [ '1.3.0' ],
+189 silly audit   pify: [ '2.3.0', '3.0.0' ],
+189 silly audit   'strip-dirs': [ '2.1.0' ],
+189 silly audit   'file-type': [ '5.2.0', '6.2.0', '3.9.0' ],
+189 silly audit   'is-stream': [ '1.1.0' ],
+189 silly audit   'seek-bzip': [ '1.0.6' ],
+189 silly audit   'unbzip2-stream': [ '1.4.3' ],
+189 silly audit   'get-stream': [ '2.3.1' ],
+189 silly audit   yauzl: [ '2.10.0' ],
+189 silly audit   'pinkie-promise': [ '2.0.1' ],
+189 silly audit   pinkie: [ '2.0.4' ],
+189 silly audit   commander: [ '2.20.3' ],
+189 silly audit   'is-natural-number': [ '4.0.1' ],
+189 silly audit   'buffer-crc32': [ '0.2.13' ],
+189 silly audit   'fd-slicer': [ '1.1.0' ],
+189 silly audit   pend: [ '1.2.0' ],
+189 silly audit   'buffer-alloc': [ '1.2.0' ],
+189 silly audit   'to-buffer': [ '1.1.1' ],
+189 silly audit   xtend: [ '4.0.2' ],
+189 silly audit   'buffer-alloc-unsafe': [ '1.1.0' ],
+189 silly audit   'buffer-fill': [ '1.0.0' ],
+189 silly audit   nan: [ '2.15.0' ],
+189 silly audit   abbrev: [ '1.1.1' ],
+189 silly audit   ajv: [ '4.11.8' ],
+189 silly audit   asn1: [ '0.2.3' ],
+189 silly audit   'assert-plus': [ '0.2.0', '1.0.0' ],
+189 silly audit   'aws-sign2': [ '0.6.0' ],
+189 silly audit   aws4: [ '1.7.0' ],
+189 silly audit   'balanced-match': [ '1.0.0' ],
+189 silly audit   'bcrypt-pbkdf': [ '1.0.1' ],
+189 silly audit   'block-stream': [ '0.0.9' ],
+189 silly audit   boom: [ '2.10.1' ],
+189 silly audit   'brace-expansion': [ '1.1.11' ],
+189 silly audit   co: [ '4.6.0' ],
+189 silly audit   'concat-map': [ '0.0.1' ],
+189 silly audit   cryptiles: [ '2.0.5' ],
+189 silly audit   dashdash: [ '1.14.1' ],
+189 silly audit   'ecc-jsbn': [ '0.1.1' ],
+189 silly audit   extend: [ '3.0.1' ],
+189 silly audit   'forever-agent': [ '0.6.1' ],
+189 silly audit   'fs.realpath': [ '1.0.0' ],
+189 silly audit   extsprintf: [ '1.3.0' ],
+189 silly audit   fstream: [ '1.0.11' ],
+189 silly audit   'fstream-ignore': [ '1.0.5' ],
+189 silly audit   getpass: [ '0.1.7' ],
+189 silly audit   glob: [ '7.1.2' ],
+189 silly audit   'har-schema': [ '1.0.5' ],
+189 silly audit   'har-validator': [ '4.2.1' ],
+189 silly audit   hawk: [ '3.1.3' ],
+189 silly audit   hoek: [ '2.16.3' ],
+189 silly audit   'http-signature': [ '1.1.1' ],
+189 silly audit   inflight: [ '1.0.6' ],
+189 silly audit   'is-typedarray': [ '1.0.0' ],
+189 silly audit   isstream: [ '0.1.2' ],
+189 silly audit   jsbn: [ '0.1.1' ],
+189 silly audit   'json-schema': [ '0.2.3' ],
+189 silly audit   'json-stable-stringify': [ '1.0.1' ],
+189 silly audit   'json-stringify-safe': [ '5.0.1' ],
+189 silly audit   jsonify: [ '0.0.0' ],
+189 silly audit   jsprim: [ '1.4.1' ],
+189 silly audit   minimatch: [ '3.0.4' ],
+189 silly audit   mkdirp: [ '0.5.1' ],
+189 silly audit   'node-pre-gyp': [ '0.6.39' ],
+189 silly audit   nopt: [ '4.0.1' ],
+189 silly audit   'oauth-sign': [ '0.8.2' ],
+189 silly audit   'os-homedir': [ '1.0.2' ],
+189 silly audit   'os-tmpdir': [ '1.0.2' ],
+189 silly audit   'path-is-absolute': [ '1.0.1' ],
+189 silly audit   osenv: [ '0.1.5' ],
+189 silly audit   'performance-now': [ '0.2.0' ],
+189 silly audit   punycode: [ '1.4.1' ],
+189 silly audit   request: [ '2.81.0' ],
+189 silly audit   rimraf: [ '2.6.2' ],
+189 silly audit   sshpk: [ '1.14.1' ],
+189 silly audit   sntp: [ '1.0.9' ],
+189 silly audit   tar: [ '2.2.1' ],
+189 silly audit   stringstream: [ '0.0.5' ],
+189 silly audit   'tar-pack': [ '3.4.1' ],
+189 silly audit   'tough-cookie': [ '2.3.4' ],
+189 silly audit   'uid-number': [ '0.0.6' ],
+189 silly audit   uuid: [ '3.2.1' ],
+189 silly audit   verror: [ '1.10.0' ]
+189 silly audit }
+190 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 918ms
+191 timing auditReport:getReport Completed in 923ms
+192 silly audit report {
+192 silly audit report   minimist: [
+192 silly audit report     {
+192 silly audit report       id: 1070254,
+192 silly audit report       url: 'https://github.com/advisories/GHSA-vh95-rmgr-6w4m',
+192 silly audit report       title: 'Prototype Pollution in minimist',
+192 silly audit report       severity: 'moderate',
+192 silly audit report       vulnerable_versions: '>=1.0.0 <1.2.3',
+192 silly audit report       cwe: [Array],
+192 silly audit report       cvss: [Object]
+192 silly audit report     },
+192 silly audit report     {
+192 silly audit report       id: 1070255,
+192 silly audit report       url: 'https://github.com/advisories/GHSA-vh95-rmgr-6w4m',
+192 silly audit report       title: 'Prototype Pollution in minimist',
+192 silly audit report       severity: 'moderate',
+192 silly audit report       vulnerable_versions: '<0.2.1',
+192 silly audit report       cwe: [Array],
+192 silly audit report       cvss: [Object]
+192 silly audit report     },
+192 silly audit report     {
+192 silly audit report       id: 1067342,
+192 silly audit report       url: 'https://github.com/advisories/GHSA-xvch-5gv4-984h',
+192 silly audit report       title: 'Prototype Pollution in minimist',
+192 silly audit report       severity: 'critical',
+192 silly audit report       vulnerable_versions: '<1.2.6',
+192 silly audit report       cwe: [Array],
+192 silly audit report       cvss: [Object]
+192 silly audit report     }
+192 silly audit report   ],
+192 silly audit report   'json-schema': [
+192 silly audit report     {
+192 silly audit report       id: 1067524,
+192 silly audit report       url: 'https://github.com/advisories/GHSA-896r-f27r-55mw',
+192 silly audit report       title: 'json-schema is vulnerable to Prototype Pollution',
+192 silly audit report       severity: 'moderate',
+192 silly audit report       vulnerable_versions: '<0.4.0',
+192 silly audit report       cwe: [Array],
+192 silly audit report       cvss: [Object]
+192 silly audit report     }
+192 silly audit report   ],
+192 silly audit report   tar: [
+192 silly audit report     {
+192 silly audit report       id: 1067734,
+192 silly audit report       url: 'https://github.com/advisories/GHSA-qq89-hq3f-393p',
+192 silly audit report       title: 'Arbitrary File Creation/Overwrite via insufficient symlink protection due to directory cache poisoning using symbolic links',
+192 silly audit report       severity: 'high',
+192 silly audit report       vulnerable_versions: '<4.4.18',
+192 silly audit report       cwe: [Array],
+192 silly audit report       cvss: [Object]
+192 silly audit report     },
+192 silly audit report     {
+192 silly audit report       id: 1067731,
+192 silly audit report       url: 'https://github.com/advisories/GHSA-5955-9wpr-37jh',
+192 silly audit report       title: 'Arbitrary File Creation/Overwrite on Windows via insufficient relative path sanitization',
+192 silly audit report       severity: 'high',
+192 silly audit report       vulnerable_versions: '<4.4.18',
+192 silly audit report       cwe: [Array],
+192 silly audit report       cvss: [Object]
+192 silly audit report     },
+192 silly audit report     {
+192 silly audit report       id: 1067737,
+192 silly audit report       url: 'https://github.com/advisories/GHSA-9r2w-394v-53qc',
+192 silly audit report       title: 'Arbitrary File Creation/Overwrite via insufficient symlink protection due to directory cache poisoning using symbolic links',
+192 silly audit report       severity: 'high',
+192 silly audit report       vulnerable_versions: '<4.4.16',
+192 silly audit report       cwe: [Array],
+192 silly audit report       cvss: [Object]
+192 silly audit report     },
+192 silly audit report     {
+192 silly audit report       id: 1067767,
+192 silly audit report       url: 'https://github.com/advisories/GHSA-3jfq-g458-7qm9',
+192 silly audit report       title: 'Arbitrary File Creation/Overwrite due to insufficient absolute path sanitization',
+192 silly audit report       severity: 'high',
+192 silly audit report       vulnerable_versions: '<3.2.2',
+192 silly audit report       cwe: [Array],
+192 silly audit report       cvss: [Object]
+192 silly audit report     },
+192 silly audit report     {
+192 silly audit report       id: 1067771,
+192 silly audit report       url: 'https://github.com/advisories/GHSA-r628-mhmh-qjhw',
+192 silly audit report       title: 'Arbitrary File Creation/Overwrite via insufficient symlink protection due to directory cache poisoning',
+192 silly audit report       severity: 'high',
+192 silly audit report       vulnerable_versions: '<3.2.3',
+192 silly audit report       cwe: [Array],
+192 silly audit report       cvss: [Object]
+192 silly audit report     },
+192 silly audit report     {
+192 silly audit report       id: 1069638,
+192 silly audit report       url: 'https://github.com/advisories/GHSA-j44m-qm6p-hp7m',
+192 silly audit report       title: 'Arbitrary File Overwrite in tar',
+192 silly audit report       severity: 'high',
+192 silly audit report       vulnerable_versions: '<2.2.2',
+192 silly audit report       cwe: [Array],
+192 silly audit report       cvss: [Object]
+192 silly audit report     }
+192 silly audit report   ],
+192 silly audit report   ajv: [
+192 silly audit report     {
+192 silly audit report       id: 1067946,
+192 silly audit report       url: 'https://github.com/advisories/GHSA-v88g-cgmw-v5xw',
+192 silly audit report       title: 'Prototype Pollution in Ajv',
+192 silly audit report       severity: 'moderate',
+192 silly audit report       vulnerable_versions: '<6.12.3',
+192 silly audit report       cwe: [Array],
+192 silly audit report       cvss: [Object]
+192 silly audit report     }
+192 silly audit report   ],
+192 silly audit report   ini: [
+192 silly audit report     {
+192 silly audit report       id: 1068298,
+192 silly audit report       url: 'https://github.com/advisories/GHSA-qqgx-2p2h-9c37',
+192 silly audit report       title: 'Prototype Pollution',
+192 silly audit report       severity: 'high',
+192 silly audit report       vulnerable_versions: '<1.3.6',
+192 silly audit report       cwe: [Array],
+192 silly audit report       cvss: [Object]
+192 silly audit report     }
+192 silly audit report   ],
+192 silly audit report   stringstream: [
+192 silly audit report     {
+192 silly audit report       id: 1069560,
+192 silly audit report       url: 'https://github.com/advisories/GHSA-mf6x-7mm4-x2g7',
+192 silly audit report       title: 'Out-of-bounds Read in stringstream',
+192 silly audit report       severity: 'moderate',
+192 silly audit report       vulnerable_versions: '<0.0.6',
+192 silly audit report       cwe: [Array],
+192 silly audit report       cvss: [Object]
+192 silly audit report     }
+192 silly audit report   ],
+192 silly audit report   fstream: [
+192 silly audit report     {
+192 silly audit report       id: 1069630,
+192 silly audit report       url: 'https://github.com/advisories/GHSA-xf7w-r453-m56c',
+192 silly audit report       title: 'Arbitrary File Overwrite in fstream',
+192 silly audit report       severity: 'high',
+192 silly audit report       vulnerable_versions: '<1.0.12',
+192 silly audit report       cwe: [Array],
+192 silly audit report       cvss: [Object]
+192 silly audit report     }
+192 silly audit report   ],
+192 silly audit report   extend: [
+192 silly audit report     {
+192 silly audit report       id: 1069730,
+192 silly audit report       url: 'https://github.com/advisories/GHSA-qrmc-fj45-qfc2',
+192 silly audit report       title: 'Prototype Pollution in extend',
+192 silly audit report       severity: 'moderate',
+192 silly audit report       vulnerable_versions: '>=3.0.0 <3.0.2',
+192 silly audit report       cwe: [Array],
+192 silly audit report       cvss: [Object]
+192 silly audit report     }
+192 silly audit report   ],
+192 silly audit report   cryptiles: [
+192 silly audit report     {
+192 silly audit report       id: 1069854,
+192 silly audit report       url: 'https://github.com/advisories/GHSA-rq8g-5pc5-wrhr',
+192 silly audit report       title: 'Insufficient Entropy in cryptiles',
+192 silly audit report       severity: 'critical',
+192 silly audit report       vulnerable_versions: '<4.1.2',
+192 silly audit report       cwe: [Array],
+192 silly audit report       cvss: [Object]
+192 silly audit report     }
+192 silly audit report   ],
+192 silly audit report   hoek: [
+192 silly audit report     {
+192 silly audit report       id: 1069910,
+192 silly audit report       url: 'https://github.com/advisories/GHSA-jp4x-w63m-7wgm',
+192 silly audit report       title: 'Prototype Pollution in hoek',
+192 silly audit report       severity: 'moderate',
+192 silly audit report       vulnerable_versions: '<4.2.1',
+192 silly audit report       cwe: [Array],
+192 silly audit report       cvss: [Object]
+192 silly audit report     }
+192 silly audit report   ]
+192 silly audit report }
+193 timing reifyNode:node_modules/buffer-alloc-unsafe Completed in 1476ms
+194 timing reifyNode:node_modules/buffer-fill Completed in 1477ms
+195 timing reifyNode:node_modules/buffer-alloc Completed in 1477ms
+196 timing reifyNode:node_modules/buffer-crc32 Completed in 1494ms
+197 timing reifyNode:node_modules/pinkie Completed in 1494ms
+198 timing reifyNode:node_modules/pinkie-promise Completed in 1494ms
+199 timing reifyNode:node_modules/is-stream Completed in 1498ms
+200 timing reifyNode:node_modules/pify Completed in 1428ms
+201 timing reifyNode:node_modules/strip-dirs Completed in 1498ms
+202 timing reifyNode:node_modules/make-dir Completed in 1427ms
+203 timing reifyNode:node_modules/decompress-targz Completed in 1426ms
+204 timing reifyNode:node_modules/decompress-tarbz2 Completed in 1426ms
+205 timing reifyNode:node_modules/decompress-tar Completed in 1426ms
+206 timing reifyNode:node_modules/decompress-unzip Completed in 1426ms
+207 timing reifyNode:node_modules/decompress-tarxz Completed in 1425ms
+208 timing reifyNode:node_modules/decompress Completed in 1425ms
+209 timing reifyNode:node_modules/decompress-tarxz/node_modules/file-type Completed in 1425ms
+210 timing reifyNode:node_modules/make-dir/node_modules/pify Completed in 1429ms
+211 timing reifyNode:node_modules/decompress-tarbz2/node_modules/file-type Completed in 1429ms
+212 timing reifyNode:node_modules/decompress-unzip/node_modules/file-type Completed in 1428ms
+213 timing reifyNode:node_modules/pend Completed in 1505ms
+214 timing reifyNode:node_modules/get-stream Completed in 1506ms
+215 timing reifyNode:node_modules/file-type Completed in 1505ms
+216 timing reifyNode:node_modules/is-natural-number Completed in 1506ms
+217 warn deprecated ffmpeg-binaries@4.0.0: ffmpeg-binaries is no longer being maintained. use ffmpeg-static, or just install ffmpeg
+218 timing reifyNode:node_modules/ffmpeg-binaries Completed in 1431ms
+219 timing reifyNode:node_modules/to-buffer Completed in 1516ms
+220 timing reifyNode:node_modules/xtend Completed in 1531ms
+221 timing metavuln:cache:get:security-advisory:minimist:HM639IbFj8AvxaH23+jnhS7d3y2d8JaXxTfJGjGmcLQZ6k5phpMc3HmEfAUjbloiJ7pIlRbrZB0WuVcYcfvswA== Completed in 601ms
+222 timing metavuln:cache:get:security-advisory:minimist:HzlTd/CS509JwqRUmSOa+xKGYgjeXpUaWCnQckWGHjn/fcOUvS1viXUyBuSwKMKOELDnu9ADP3t6IyP7rFSUIA== Completed in 599ms
+223 timing metavuln:cache:get:security-advisory:minimist:nZkhUdPEpKwzIx1nekYW4B7BHQyF2nm6J0JsgeP2HfA0DRMT5hhByRU71A4RPgtBbQPYEzVBozv8/mBZCafaGw== Completed in 600ms
+224 timing metavuln:cache:get:security-advisory:json-schema:z4uaAkU8YFwVhMhBajlsJ0b4cb+4Wm+nxCdI3FFU+acRBVlI2iIwCoTnly8j8TFtxcbtJfPozh8N5Ni5rmsq0Q== Completed in 600ms
+225 timing metavuln:cache:get:security-advisory:tar:UQnNosBtZfHHkOQcVUKYNPiU0PB/uNif2cbvnrzKbzCEyfB9pW6JZR0xSaGSkCQj2Rvcpx7WgYvcwRe9X8/XSA== Completed in 592ms
+226 timing metavuln:cache:get:security-advisory:tar:9fCpHzYQDt6/279Ukg2ZXFXMglUrGwxbNicHsd4J1Z/goqUTOwGqLEJtH40hwrcXHzh/ZasDnm+E4OyQiedXcA== Completed in 594ms
+227 timing metavuln:cache:get:security-advisory:tar:A8ImuLv3PmHkbpv9X1ifoxqAnyDnPy8K7sEkyfb1iRSOiZ9OFMyNgaF+clYyOCD7Q0QgxfIz2bPDZD6fyLC9kw== Completed in 586ms
+228 timing metavuln:cache:get:security-advisory:tar:LGNpIzs2mH9XBi2mIftUzBCnZdQGwNe6Yz6M07r8S9KPT8S7NHhp8QgxhRg0PydzD18H6KHGntGF+k9ycD49qQ== Completed in 593ms
+229 timing metavuln:cache:get:security-advisory:tar:fhqFzz90bxoq7DaGDlMK7t7CjkJNFn2vuRIo+17L7EtXkYoVaFkn8vve3AzvhxKJeEreLM52fhjseseedPLuJA== Completed in 582ms
+230 timing metavuln:cache:get:security-advisory:tar:JgbkbBKOsh5GpsDloO0atPO0HvH5nfXHG3FSUPEW1f64ce4pwa5WMNarJD2RLlQscdePOICMFtlbhYDHEw5ZrA== Completed in 581ms
+231 timing metavuln:cache:get:security-advisory:ajv:HdUHTYDANDTVSFV1lY2PaOXn1Svz5bRZf2n/w9y0htSh7GckcEVEbvyaV+kC2XEIRCDn/tv2RLopzgrw8o6QQg== Completed in 582ms
+232 timing metavuln:cache:get:security-advisory:ini:+ZV6TyI6TP61Fs2eq1DELG/ExiagIFfPWXhhNaRbyZkjzDbZOE11UG6AFyQJNECD8rYFan4fmKfSryt1hP0VXg== Completed in 577ms
+233 timing metavuln:cache:get:security-advisory:stringstream:Gq3eOEtNv4q5Q6YQ2pqT08Bp+siImNyu7EF0kDjsZfxlGsQjIskZ+PaDtZfk2J4fxJNr9RTMrWU+XJdGBLLe7g== Completed in 576ms
+234 timing metavuln:cache:get:security-advisory:fstream:62rffft6r9xf4N2dQBThuN5mRwWtW6SFbMxKhF3Cwxn+6LJJr12TSU8sJkigM4t2RqQFtdBFI/wY5Pxm+34dwg== Completed in 573ms
+235 timing metavuln:cache:get:security-advisory:extend:Mkk/6fQNQaM9ja4SE9i7f0voeN+nwMWAPMResCB5mZQk8Hcp6Al0PmV9IunU08vx++crifv2j/TQQ2J25F6E5Q== Completed in 565ms
+236 timing metavuln:cache:get:security-advisory:cryptiles:kB0G+o0I780oETB1eBc6mnJtN97DkidVprM5H8JC9dIiQsZGEtDAeOmw8UF4l+nQ9CNAXTUPaR+vZ5J5pUk6/Q== Completed in 563ms
+237 timing metavuln:cache:get:security-advisory:hoek:8a5asmINmGHsT6DA4ybOIybxJOaKFXLgQs411hPb3NbPsZt1XzdejlFuywJ1ET01F6pgH6V+UrxNi0WcKMPenw== Completed in 560ms
+238 timing reifyNode:node_modules/yauzl Completed in 1588ms
+239 timing reifyNode:node_modules/graceful-fs Completed in 1516ms
+240 timing reifyNode:node_modules/decompress-tar/node_modules/tar-stream Completed in 1527ms
+241 timing reifyNode:node_modules/decompress-tar/node_modules/bl Completed in 1530ms
+242 timing reifyNode:node_modules/fd-slicer Completed in 1609ms
+243 timing reifyNode:node_modules/commander Completed in 1609ms
+244 timing reifyNode:node_modules/seek-bzip Completed in 1695ms
+245 timing reifyNode:node_modules/unbzip2-stream Completed in 1739ms
+246 http fetch GET 200 https://registry.npmjs.org/tar 758ms (cache hit)
+247 timing metavuln:packument:tar Completed in 763ms
+248 timing metavuln:load:security-advisory:tar:1067734 Completed in 3ms
+249 timing metavuln:calculate:security-advisory:tar:1067734 Completed in 766ms
+250 timing metavuln:load:security-advisory:tar:1067731 Completed in 2ms
+251 timing metavuln:calculate:security-advisory:tar:1067731 Completed in 767ms
+252 timing metavuln:load:security-advisory:tar:1067737 Completed in 6ms
+253 timing metavuln:calculate:security-advisory:tar:1067737 Completed in 773ms
+254 timing metavuln:load:security-advisory:tar:1067767 Completed in 32ms
+255 timing metavuln:calculate:security-advisory:tar:1067767 Completed in 800ms
+256 timing metavuln:load:security-advisory:tar:1067771 Completed in 1ms
+257 timing metavuln:calculate:security-advisory:tar:1067771 Completed in 798ms
+258 timing metavuln:load:security-advisory:tar:1069638 Completed in 2ms
+259 timing metavuln:calculate:security-advisory:tar:1069638 Completed in 797ms
+260 http fetch GET 200 https://registry.npmjs.org/stringstream 790ms (cache hit)
+261 timing metavuln:packument:stringstream Completed in 793ms
+262 timing metavuln:load:security-advisory:stringstream:1069560 Completed in 0ms
+263 timing metavuln:calculate:security-advisory:stringstream:1069560 Completed in 793ms
+264 http fetch GET 200 https://registry.npmjs.org/json-schema 815ms (cache hit)
+265 timing metavuln:packument:json-schema Completed in 821ms
+266 timing metavuln:load:security-advisory:json-schema:1067524 Completed in 0ms
+267 timing metavuln:calculate:security-advisory:json-schema:1067524 Completed in 821ms
+268 http fetch GET 200 https://registry.npmjs.org/ajv 798ms (cache hit)
+269 timing metavuln:packument:ajv Completed in 805ms
+270 timing metavuln:load:security-advisory:ajv:1067946 Completed in 8ms
+271 timing metavuln:calculate:security-advisory:ajv:1067946 Completed in 816ms
+272 http fetch GET 200 https://registry.npmjs.org/minimist 838ms (cache hit)
+273 timing metavuln:packument:minimist Completed in 839ms
+274 timing metavuln:load:security-advisory:minimist:1070254 Completed in 1ms
+275 timing metavuln:calculate:security-advisory:minimist:1070254 Completed in 897ms
+276 timing metavuln:load:security-advisory:minimist:1070255 Completed in 0ms
+277 timing metavuln:calculate:security-advisory:minimist:1070255 Completed in 839ms
+278 timing metavuln:load:security-advisory:minimist:1067342 Completed in 0ms
+279 timing metavuln:calculate:security-advisory:minimist:1067342 Completed in 838ms
+280 http fetch GET 200 https://registry.npmjs.org/fstream 806ms (cache hit)
+281 timing metavuln:packument:fstream Completed in 808ms
+282 timing metavuln:load:security-advisory:fstream:1069630 Completed in 4ms
+283 timing metavuln:calculate:security-advisory:fstream:1069630 Completed in 813ms
+284 http fetch GET 200 https://registry.npmjs.org/ini 816ms (cache hit)
+285 timing metavuln:packument:ini Completed in 874ms
+286 timing metavuln:load:security-advisory:ini:1068298 Completed in 5ms
+287 timing metavuln:calculate:security-advisory:ini:1068298 Completed in 879ms
+288 http fetch GET 200 https://registry.npmjs.org/extend 864ms (cache hit)
+289 timing metavuln:packument:extend Completed in 867ms
+290 timing metavuln:load:security-advisory:extend:1069730 Completed in 1ms
+291 timing metavuln:calculate:security-advisory:extend:1069730 Completed in 869ms
+292 http fetch GET 200 https://registry.npmjs.org/cryptiles 863ms (cache hit)
+293 timing metavuln:packument:cryptiles Completed in 865ms
+294 timing metavuln:load:security-advisory:cryptiles:1069854 Completed in 1ms
+295 timing metavuln:calculate:security-advisory:cryptiles:1069854 Completed in 866ms
+296 http fetch GET 200 https://registry.npmjs.org/hoek 862ms (cache hit)
+297 timing metavuln:packument:hoek Completed in 865ms
+298 timing metavuln:load:security-advisory:hoek:1069910 Completed in 1ms
+299 timing metavuln:calculate:security-advisory:hoek:1069910 Completed in 867ms
+300 timing metavuln:cache:get:security-advisory:rc:lY0T7yQCamSwv6XrfkWFkNC52rORUpy+EA52ZHNPnNx68d9GVbTXrEorrxRr7Rp5o2tBSHDK27ayPcgCQX8IrQ== Completed in 7ms
+301 http fetch GET 200 https://registry.npmjs.org/rc 96ms (cache hit)
+302 timing metavuln:packument:rc Completed in 99ms
+303 timing metavuln:load:security-advisory:rc:HM639IbFj8AvxaH23+jnhS7d3y2d8JaXxTfJGjGmcLQZ6k5phpMc3HmEfAUjbloiJ7pIlRbrZB0WuVcYcfvswA== Completed in 1ms
+304 timing metavuln:calculate:security-advisory:rc:HM639IbFj8AvxaH23+jnhS7d3y2d8JaXxTfJGjGmcLQZ6k5phpMc3HmEfAUjbloiJ7pIlRbrZB0WuVcYcfvswA== Completed in 100ms
+305 timing metavuln:cache:get:security-advisory:mkdirp:+PhhGcJymuV+5rvW81MCikyjMiTBQuLIQZOUvB89Mb8uk3Q8tDX1tf8ihGO4POtNtnBz09eROrGo7rpMSategw== Completed in 6ms
+306 http fetch GET 200 https://registry.npmjs.org/mkdirp 12ms (cache hit)
+307 timing metavuln:packument:mkdirp Completed in 14ms
+308 timing metavuln:load:security-advisory:mkdirp:HzlTd/CS509JwqRUmSOa+xKGYgjeXpUaWCnQckWGHjn/fcOUvS1viXUyBuSwKMKOELDnu9ADP3t6IyP7rFSUIA== Completed in 0ms
+309 timing metavuln:calculate:security-advisory:mkdirp:HzlTd/CS509JwqRUmSOa+xKGYgjeXpUaWCnQckWGHjn/fcOUvS1viXUyBuSwKMKOELDnu9ADP3t6IyP7rFSUIA== Completed in 14ms
+310 timing metavuln:cache:get:security-advisory:jsprim:fEChysCl26gM00MIIgiaeBLHH+xxFrxNB4K8fVhfMAmQdVxslrwGLXmLGS2q1f1xTxCJJKb+fAQ6ZjbbcX3QBg== Completed in 5ms
+311 http fetch GET 200 https://registry.npmjs.org/jsprim 75ms (cache hit)
+312 timing metavuln:packument:jsprim Completed in 75ms
+313 timing metavuln:load:security-advisory:jsprim:z4uaAkU8YFwVhMhBajlsJ0b4cb+4Wm+nxCdI3FFU+acRBVlI2iIwCoTnly8j8TFtxcbtJfPozh8N5Ni5rmsq0Q== Completed in 1ms
+314 timing metavuln:calculate:security-advisory:jsprim:z4uaAkU8YFwVhMhBajlsJ0b4cb+4Wm+nxCdI3FFU+acRBVlI2iIwCoTnly8j8TFtxcbtJfPozh8N5Ni5rmsq0Q== Completed in 77ms
+315 timing reifyNode:node_modules/nan Completed in 2097ms
+316 timing reify:unpack Completed in 2097ms
+317 timing reify:unretire Completed in 1ms
+318 timing build:queue Completed in 79ms
+319 timing build:link:node_modules/seek-bzip Completed in 23ms
+320 timing metavuln:cache:get:security-advisory:node-pre-gyp:Kfns+5OoJKzN6wR3/AbLz2bEsAZKif97rxrh9owFugjWVYhRzBnjaAFx5lf9nrFGNljwPe2e04EjooR9clkysA== Completed in 121ms
+321 timing metavuln:cache:get:security-advisory:tar-pack:J9nhrJFnjjLZPAwjYiJ1vSJw0l5o22y3xT9schCaBCQvYeOS2S7+3lki4lgVJ/1dOUB/w6mZITsr/sz2UqwgPw== Completed in 120ms
+322 timing build:link:node_modules/decompress-tarxz/node_modules/lzma-native Completed in 37ms
+323 timing build:link:node_modules/decompress-tarxz/node_modules/lzma-native/node_modules/detect-libc Completed in 37ms
+324 timing build:link:node_modules/decompress-tarxz/node_modules/lzma-native/node_modules/mkdirp Completed in 38ms
+325 timing build:link:node_modules/decompress-tarxz/node_modules/lzma-native/node_modules/node-pre-gyp Completed in 88ms
+326 timing build:link:node_modules/decompress-tarxz/node_modules/lzma-native/node_modules/nopt Completed in 89ms
+327 timing build:link:node_modules/decompress-tarxz/node_modules/lzma-native/node_modules/rc Completed in 89ms
+328 timing build:link:node_modules/decompress-tarxz/node_modules/lzma-native/node_modules/rimraf Completed in 88ms
+329 timing build:link:node_modules/decompress-tarxz/node_modules/lzma-native/node_modules/semver Completed in 88ms
+330 timing build:link:node_modules/decompress-tarxz/node_modules/lzma-native/node_modules/sshpk Completed in 98ms
+331 timing build:link:node_modules/decompress-tarxz/node_modules/lzma-native/node_modules/uuid Completed in 97ms
+332 timing build:link Completed in 105ms
+333 info run ffmpeg-binaries@4.0.0 install node_modules/ffmpeg-binaries node install
+334 info run lzma-native@3.0.8 install node_modules/decompress-tarxz/node_modules/lzma-native node-pre-gyp install --fallback-to-build && node node_modules/rimraf/bin.js build
+335 http fetch GET 200 https://registry.npmjs.org/node-pre-gyp 312ms (cache hit)
+336 timing metavuln:packument:node-pre-gyp Completed in 318ms
+337 timing metavuln:load:security-advisory:node-pre-gyp:9fCpHzYQDt6/279Ukg2ZXFXMglUrGwxbNicHsd4J1Z/goqUTOwGqLEJtH40hwrcXHzh/ZasDnm+E4OyQiedXcA== Completed in 2ms
+338 timing metavuln:calculate:security-advisory:node-pre-gyp:9fCpHzYQDt6/279Ukg2ZXFXMglUrGwxbNicHsd4J1Z/goqUTOwGqLEJtH40hwrcXHzh/ZasDnm+E4OyQiedXcA== Completed in 320ms
+339 http fetch GET 200 https://registry.npmjs.org/tar-pack 318ms (cache hit)
+340 timing metavuln:packument:tar-pack Completed in 390ms
+341 timing metavuln:load:security-advisory:tar-pack:9fCpHzYQDt6/279Ukg2ZXFXMglUrGwxbNicHsd4J1Z/goqUTOwGqLEJtH40hwrcXHzh/ZasDnm+E4OyQiedXcA== Completed in 0ms
+342 timing metavuln:calculate:security-advisory:tar-pack:9fCpHzYQDt6/279Ukg2ZXFXMglUrGwxbNicHsd4J1Z/goqUTOwGqLEJtH40hwrcXHzh/ZasDnm+E4OyQiedXcA== Completed in 391ms
+343 timing metavuln:cache:get:security-advisory:har-validator:CgreuaHfcAU7CmEfD9OIaCVp8F8HOjHS+i9eecqipZ6j0oNyAMK7INynpzk+DNwSUXAO+ddjMbZgorVh3darKw== Completed in 24ms
+344 http fetch GET 200 https://registry.npmjs.org/har-validator 203ms (cache hit)
+345 timing metavuln:packument:har-validator Completed in 207ms
+346 timing metavuln:load:security-advisory:har-validator:HdUHTYDANDTVSFV1lY2PaOXn1Svz5bRZf2n/w9y0htSh7GckcEVEbvyaV+kC2XEIRCDn/tv2RLopzgrw8o6QQg== Completed in 0ms
+347 timing metavuln:calculate:security-advisory:har-validator:HdUHTYDANDTVSFV1lY2PaOXn1Svz5bRZf2n/w9y0htSh7GckcEVEbvyaV+kC2XEIRCDn/tv2RLopzgrw8o6QQg== Completed in 207ms
+348 timing metavuln:cache:get:security-advisory:rc:1QvkoUDfo9BtWWlkdUqfWAKhUZNXxB8moPB6eagFxnjJuPZZ+bRVbLgKtyxzCXAajBzYe1/isWufRQYytw/MNg== Completed in 10ms
+349 timing metavuln:load:security-advisory:rc:+ZV6TyI6TP61Fs2eq1DELG/ExiagIFfPWXhhNaRbyZkjzDbZOE11UG6AFyQJNECD8rYFan4fmKfSryt1hP0VXg== Completed in 3ms
+350 timing metavuln:calculate:security-advisory:rc:+ZV6TyI6TP61Fs2eq1DELG/ExiagIFfPWXhhNaRbyZkjzDbZOE11UG6AFyQJNECD8rYFan4fmKfSryt1hP0VXg== Completed in 13ms
+351 timing metavuln:cache:get:security-advisory:request:mItSgeilFnKDRLrM0o8WBxswyPjZVFB7TR3S26WwympcgvrGlR0ccPao/IdwYpWZYyISmzCj4oZhzyOpXTPtbA== Completed in 295ms
+352 http fetch GET 200 https://registry.npmjs.org/request 376ms (cache hit)
+353 timing metavuln:packument:request Completed in 393ms
+354 timing metavuln:load:security-advisory:request:Gq3eOEtNv4q5Q6YQ2pqT08Bp+siImNyu7EF0kDjsZfxlGsQjIskZ+PaDtZfk2J4fxJNr9RTMrWU+XJdGBLLe7g== Completed in 114ms
+355 timing metavuln:calculate:security-advisory:request:Gq3eOEtNv4q5Q6YQ2pqT08Bp+siImNyu7EF0kDjsZfxlGsQjIskZ+PaDtZfk2J4fxJNr9RTMrWU+XJdGBLLe7g== Completed in 507ms
+356 timing metavuln:cache:get:security-advisory:fstream-ignore:C0X+rANQ5AoRruRxhrRVNZoJYxIPgShDLfpNOvx/CbLIu79/vm9e09FHhiSnrZDT6dcM+76WnVDIo+vyl6hbZA== Completed in 178ms
+357 timing metavuln:cache:get:security-advisory:tar-pack:RT/slUvro0xiMiOnTgLdLQ1dDZumlpA8+BumhTOOE+NKyvTHgtsOveV6ysP3y+gzTTmOUuaxU1hklVOAwykzXA== Completed in 108ms
+358 timing metavuln:load:security-advisory:tar-pack:62rffft6r9xf4N2dQBThuN5mRwWtW6SFbMxKhF3Cwxn+6LJJr12TSU8sJkigM4t2RqQFtdBFI/wY5Pxm+34dwg== Completed in 0ms
+359 timing metavuln:calculate:security-advisory:tar-pack:62rffft6r9xf4N2dQBThuN5mRwWtW6SFbMxKhF3Cwxn+6LJJr12TSU8sJkigM4t2RqQFtdBFI/wY5Pxm+34dwg== Completed in 109ms
+360 timing metavuln:cache:get:security-advisory:tar:/QtqNEccTjA3+YtDyZq8/La3KUEE8QUVsL/JWu1WB/pPza8NbGzd67oKM1QsBppNJKXf/9Ufjtr8yEjf75t/oQ== Completed in 179ms
+361 timing metavuln:load:security-advisory:tar:62rffft6r9xf4N2dQBThuN5mRwWtW6SFbMxKhF3Cwxn+6LJJr12TSU8sJkigM4t2RqQFtdBFI/wY5Pxm+34dwg== Completed in 0ms
+362 timing metavuln:calculate:security-advisory:tar:62rffft6r9xf4N2dQBThuN5mRwWtW6SFbMxKhF3Cwxn+6LJJr12TSU8sJkigM4t2RqQFtdBFI/wY5Pxm+34dwg== Completed in 179ms
+363 http fetch GET 200 https://registry.npmjs.org/fstream-ignore 292ms (cache hit)
+364 timing metavuln:packument:fstream-ignore Completed in 294ms
+365 timing metavuln:load:security-advisory:fstream-ignore:62rffft6r9xf4N2dQBThuN5mRwWtW6SFbMxKhF3Cwxn+6LJJr12TSU8sJkigM4t2RqQFtdBFI/wY5Pxm+34dwg== Completed in 0ms
+366 timing metavuln:calculate:security-advisory:fstream-ignore:62rffft6r9xf4N2dQBThuN5mRwWtW6SFbMxKhF3Cwxn+6LJJr12TSU8sJkigM4t2RqQFtdBFI/wY5Pxm+34dwg== Completed in 294ms
+367 timing metavuln:cache:get:security-advisory:request:kXEObXu20glfl+vPhRiUsJCFMEqIFs3QHY/Swt8itN/hwY3cM2c4YR9ZKX9wM5i5geMwzm3uWKKmZGZ1vZpJTw== Completed in 14ms
+368 timing metavuln:load:security-advisory:request:Mkk/6fQNQaM9ja4SE9i7f0voeN+nwMWAPMResCB5mZQk8Hcp6Al0PmV9IunU08vx++crifv2j/TQQ2J25F6E5Q== Completed in 1ms
+369 timing metavuln:calculate:security-advisory:request:Mkk/6fQNQaM9ja4SE9i7f0voeN+nwMWAPMResCB5mZQk8Hcp6Al0PmV9IunU08vx++crifv2j/TQQ2J25F6E5Q== Completed in 15ms
+370 timing metavuln:cache:get:security-advisory:hawk:1TKaSddzdlPJIPlI1GoxrxCC4HLdqOJGitwTSSVywvyg5C3e3qmVWjSCiGKqq1twYjgXfyAh6bYvhmrzl+PCqQ== Completed in 2ms
+371 http fetch GET 200 https://registry.npmjs.org/hawk 373ms (cache updated)
+372 timing metavuln:packument:hawk Completed in 376ms
+373 timing metavuln:load:security-advisory:hawk:kB0G+o0I780oETB1eBc6mnJtN97DkidVprM5H8JC9dIiQsZGEtDAeOmw8UF4l+nQ9CNAXTUPaR+vZ5J5pUk6/Q== Completed in 85ms
+374 timing metavuln:cache:put:security-advisory:hawk:1TKaSddzdlPJIPlI1GoxrxCC4HLdqOJGitwTSSVywvyg5C3e3qmVWjSCiGKqq1twYjgXfyAh6bYvhmrzl+PCqQ== Completed in 126ms
+375 timing metavuln:calculate:security-advisory:hawk:kB0G+o0I780oETB1eBc6mnJtN97DkidVprM5H8JC9dIiQsZGEtDAeOmw8UF4l+nQ9CNAXTUPaR+vZ5J5pUk6/Q== Completed in 587ms
+376 timing metavuln:cache:get:security-advisory:boom:bqA257xIuImP2Fb5mCQv1iy5ufu8VlIgKW6mnvFRhTW48ANpL5UOf6k+SDu/TnyGnWJCZrahgJUSQbxkf98kHQ== Completed in 179ms
+377 timing metavuln:cache:get:security-advisory:sntp:EYwsEWoR8AKFTCzSXJKnXWaW6m1ttSLxa2K2dbyDAEo29W1vB7/RDr8e5q9anlNKgt3WJ1cvI8dVkIMOwHWsvw== Completed in 177ms
+378 timing metavuln:cache:get:security-advisory:hawk:vHH8rgPhYmu0dRXJzQgFx+hzhglIP/NW25VxiV2ndlrtd1SBF0YdHoopVmukUtKXrr3fsc2/QST8MOOaEaxBTg== Completed in 178ms
+379 timing metavuln:load:security-advisory:hawk:8a5asmINmGHsT6DA4ybOIybxJOaKFXLgQs411hPb3NbPsZt1XzdejlFuywJ1ET01F6pgH6V+UrxNi0WcKMPenw== Completed in 490ms
+380 info run ffmpeg-binaries@4.0.0 install { code: 1, signal: null }
+381 timing metavuln:cache:put:security-advisory:hawk:vHH8rgPhYmu0dRXJzQgFx+hzhglIP/NW25VxiV2ndlrtd1SBF0YdHoopVmukUtKXrr3fsc2/QST8MOOaEaxBTg== Completed in 1512ms
+382 timing metavuln:calculate:security-advisory:hawk:8a5asmINmGHsT6DA4ybOIybxJOaKFXLgQs411hPb3NbPsZt1XzdejlFuywJ1ET01F6pgH6V+UrxNi0WcKMPenw== Completed in 2180ms
+383 http fetch GET 200 https://registry.npmjs.org/boom 4085ms (cache updated)
+384 timing metavuln:packument:boom Completed in 4087ms
+385 timing metavuln:load:security-advisory:boom:8a5asmINmGHsT6DA4ybOIybxJOaKFXLgQs411hPb3NbPsZt1XzdejlFuywJ1ET01F6pgH6V+UrxNi0WcKMPenw== Completed in 82ms
+386 http fetch GET 200 https://registry.npmjs.org/sntp 4215ms (cache revalidated)
+387 timing metavuln:packument:sntp Completed in 4219ms
+388 timing metavuln:load:security-advisory:sntp:8a5asmINmGHsT6DA4ybOIybxJOaKFXLgQs411hPb3NbPsZt1XzdejlFuywJ1ET01F6pgH6V+UrxNi0WcKMPenw== Completed in 4ms
+389 timing reify:rollback:createSparse Completed in 3717ms
+390 timing reify:rollback:retireShallow Completed in 0ms
+391 timing command:install Completed in 16978ms
+392 verbose stack Error: command failed
+392 verbose stack     at ChildProcess.<anonymous> (/nix/store/ra8r42571xvv1m85wanh1ll9mxmp0mwl-nodejs-16.13.2/lib/node_modules/npm/node_modules/@npmcli/promise-spawn/index.js:64:27)
+392 verbose stack     at ChildProcess.emit (node:events:390:28)
+392 verbose stack     at maybeClose (node:internal/child_process:1064:16)
+392 verbose stack     at Socket.<anonymous> (node:internal/child_process:450:11)
+392 verbose stack     at Socket.emit (node:events:390:28)
+392 verbose stack     at Pipe.<anonymous> (node:net:687:12)
+393 verbose pkgid ffmpeg-binaries@4.0.0
+394 verbose cwd /home/runner/D4YDR34M-Discord-Bot
+395 verbose Linux 5.13.0-1024-gcp
+396 verbose argv "/nix/store/ra8r42571xvv1m85wanh1ll9mxmp0mwl-nodejs-16.13.2/bin/node" "/nix/store/ra8r42571xvv1m85wanh1ll9mxmp0mwl-nodejs-16.13.2/bin/npm" "i" "ffmpeg-binaries"
+397 verbose node v16.13.2
+398 verbose npm  v8.1.2
+399 error code 1
+400 error path /home/runner/D4YDR34M-Discord-Bot/node_modules/ffmpeg-binaries
+401 error command failed
+402 error command sh -c node install
+403 error node:internal/modules/cjs/loader:936
+403 error   throw err;
+403 error   ^
+403 error
+403 error Error: Cannot find module '/home/runner/D4YDR34M-Discord-Bot/node_modules/decompress-tarxz/node_modules/lzma-native/binding-v3.0.8-node-v93-linux-x64/lzma_native.node'
+403 error Require stack:
+403 error - /home/runner/D4YDR34M-Discord-Bot/node_modules/decompress-tarxz/node_modules/lzma-native/index.js
+403 error - /home/runner/D4YDR34M-Discord-Bot/node_modules/decompress-tarxz/index.js
+403 error - /home/runner/D4YDR34M-Discord-Bot/node_modules/ffmpeg-binaries/install.js
+403 error     at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+403 error     at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+403 error     at Module.require (node:internal/modules/cjs/loader:1005:19)
+403 error     at require (node:internal/modules/cjs/helpers:102:18)
+403 error     at /home/runner/D4YDR34M-Discord-Bot/node_modules/decompress-tarxz/node_modules/lzma-native/index.js:13:14
+403 error     at Object.<anonymous> (/home/runner/D4YDR34M-Discord-Bot/node_modules/decompress-tarxz/node_modules/lzma-native/index.js:597:3)
+403 error     at Module._compile (node:internal/modules/cjs/loader:1103:14)
+403 error     at Object.Module._extensions..js (node:internal/modules/cjs/loader:1157:10)
+403 error     at Module.load (node:internal/modules/cjs/loader:981:32)
+403 error     at Function.Module._load (node:internal/modules/cjs/loader:822:12) {
+403 error   code: 'MODULE_NOT_FOUND',
+403 error   requireStack: [
+403 error     '/home/runner/D4YDR34M-Discord-Bot/node_modules/decompress-tarxz/node_modules/lzma-native/index.js',
+403 error     '/home/runner/D4YDR34M-Discord-Bot/node_modules/decompress-tarxz/index.js',
+403 error     '/home/runner/D4YDR34M-Discord-Bot/node_modules/ffmpeg-binaries/install.js'
+403 error   ]
+403 error }
+404 verbose exit 1
